@@ -1,0 +1,26 @@
+<mat-card>
+    <mat-card-content>
+        <form [formGroup]="loginUser" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+              <mat-form-field> 
+                  <mat-icon matPrefix>account_circle</mat-icon>
+                <input matInput type="email" matInput placeholder="Email Id"
+                formControlName="username" maxlength="300" autocomplete="off" required autofocus="on">
+                <mat-error *ngIf="loginUser.controls['username'].errors?.pattern">
+                    Please enter a valid email address!
+                  </mat-error>
+                <mat-error *ngIf="loginUser.controls['username'].errors?.required">Email Id Required!</mat-error>
+              </mat-form-field>
+            <mat-form-field>
+              <mat-icon matPrefix>vpn_key</mat-icon> <input matInput placeholder="Password" formControlName="password"
+                type="password" minlength="4" required maxilength="32">
+                <mat-error *ngIf="loginUser.controls['password'].errors?.required">Password Required!</mat-error>
+            </mat-form-field>
+          </div>
+          <button mat-raised-button color="accent" [disabled]="!loginUser.valid" type="submit"> Login</button>
+        </form>
+      </mat-card-content>
+</mat-card>
+<div>
+  <mat-card>
+    <canvas id="myChart" width="400" height="400"></canvas>

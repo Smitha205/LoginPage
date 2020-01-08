@@ -1,0 +1,81 @@
+.validation-message {
+    color:red;
+    margin-left: 9.5%;
+ }
+ 
+ ::placeholder {
+    font-size: 14px;
+ }
+ 
+ mat-card {
+     margin-top: 12%;
+     margin-left: 25%;
+     margin-right: 25%;
+     align-content: center;
+     width: auto;
+ }
+
+ mat-card-header {
+    margin-top: 3%;
+    margin-left: 12%;
+    height: 70%;
+    width: 70%;
+ }
+
+ mat-icon {
+    margin-right: 15px;
+ }
+ label, input ,button, mat-form-field {
+    width: 80%;
+    size: 18px;
+    margin-top: 1%;
+    margin-bottom: auto;
+ }
+ 
+ 
+ button {
+    background: #109BF8;
+    color: #FFFFFF;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    width: auto;
+ }
+ 
+ @media (max-width: 1270px) {
+ 
+    .split {
+      clear: both;
+       height: 90% !important;
+       width: 60% !important;
+       margin-top: 3%;
+       margin-left: 15% !important;
+    }
+    
+    .left {
+       display: none;
+    }
+ 
+    .right {
+       width: 0%; 
+       height: 0%;    
+       background: #F5F5F5;
+       /* background:pink; */
+    }
+    
+    label, input ,button{
+       width: 80%;
+       margin-top: 0% !important;
+    }
+ 
+    label {
+       color: #109BF8;
+    }
+    
+    button {
+       background: #109BF8;
+       color: #FFFFFF;
+       margin-top: 2.5%;
+       margin-bottom: 2.5%;
+       width: auto;
+    }
+ }
